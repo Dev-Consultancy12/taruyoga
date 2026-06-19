@@ -31,27 +31,19 @@ function setGalleryFilter(category) {
     const isMatch = category === 'all' || block.dataset.category === category;
     block.classList.toggle('hidden', !isMatch);
   });
-
-  autoScrollIndex = 0;
-  if (galleryTabs) {
-    const visible = galleryBlocks.filter(block => !block.classList.contains('hidden'));
-    if (visible.length) {
-      visible[0].scrollIntoView({ behavior: 'smooth', block: 'start' });
-    }
-  }
 }
 
-function scrollGalleryBlocks() {
-  const visibleBlocks = galleryBlocks.filter(block => !block.classList.contains('hidden'));
-  if (!visibleBlocks.length) return;
-
-  autoScrollIndex = (autoScrollIndex + 1) % visibleBlocks.length;
-  visibleBlocks[autoScrollIndex].scrollIntoView({ behavior: 'smooth', block: 'start' });
+function cycleGalleryCategory() {
+  autoScrollIndex = (autoScrollIndex + 1) % galleryFilters.length;
+  const nextFilter = galleryFilters[autoScrollIndex];
+  if (nextFilter) {
+    setGalleryFilter(nextFilter.dataset.filter);
+  }
 }
 
 function startGalleryAutoScroll() {
   stopGalleryAutoScroll();
-  autoScrollTimer = window.setInterval(scrollGalleryBlocks, autoScrollDelay);
+  autoScrollTimer = window.setInterval(cycleGalleryCategory, autoScrollDelay);
 }
 
 function stopGalleryAutoScroll() {
@@ -62,8 +54,9 @@ function stopGalleryAutoScroll() {
 }
 
 if (galleryFilters.length && galleryBlocks.length) {
-  galleryFilters.forEach(button => {
+  galleryFilters.forEach((button, index) => {
     button.addEventListener('click', () => {
+      autoScrollIndex = index;
       setGalleryFilter(button.dataset.filter);
       startGalleryAutoScroll();
     });
