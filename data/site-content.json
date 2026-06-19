@@ -1,0 +1,72 @@
+{
+  "site": {
+    "name": "Taru Yoga School",
+    "primary_location": "Dharamsala, India",
+    "email": "taruyogaschool@gmail.com",
+    "phone": "+91 9599097213",
+    "whatsapp": "919599097213",
+    "upi": "9599097213-2@ybl",
+    "instagram": "https://www.instagram.com/",
+    "google_map": "https://maps.app.goo.gl/rHHAJFmL2LprgKFm6"
+  },
+  "course_dates": {
+    "100_hour_dharamsala": [
+      "5 July – 16 July",
+      "2 August – 13 August",
+      "6 September – 17 September",
+      "4 October – 15 October"
+    ],
+    "200_hour_dharamsala": [
+      "5 July – 26 July",
+      "2 August – 22 August",
+      "6 September – 26 September",
+      "4 October – 24 October"
+    ]
+  },
+  "course_fees": {
+    "100_hour_dharamsala": [
+      "€700 without food and accommodation",
+      "€800 with food and accommodation"
+    ],
+    "200_hour_dharamsala": [
+      "€1200 with accommodation and food",
+      "€900 tuition fee with study material"
+    ]
+  },
+  "coming_soon": [
+    "100 Hour Yoga Teacher Training – Sri Lanka",
+    "200 Hour Yoga Teacher Training – Sri Lanka",
+    "Yoga Retreats – Sri Lanka",
+    "Yoga Retreats – France"
+  ],
+  "business_registration": {
+    "legal_name": "NAVIN",
+    "trade_name": "TARU YOGA SCHOOL",
+    "gstin": "07DVIPK2452L1ZA",
+    "udyam_registration_number": "UDYAM-DL-06-0213113",
+    "constitution": "Proprietorship",
+    "enterprise_type": "Micro"
+  },
+  "location": {
+    "address": "Upper Bhagsu, Dharamsala, Himachal Pradesh, India",
+    "google_maps": "https://maps.app.goo.gl/rHHAJFmL2LprgKFm6"
+  },
+  "founder": {
+    "name": "Navin",
+    "role": "Founder & Lead Yoga Teacher",
+    "highlights": [
+      "Yoga graduate from India",
+      "200-hour and 300-hour TTC completed",
+      "Teaching since 2020",
+      "Experience teaching in India, Vietnam and Bali",
+      "Founder of Taru Yoga School"
+    ]
+  },
+  "seo_keywords": [
+    "Yoga Teacher Training Dharamsala",
+    "Yoga School Dharamsala",
+    "200 Hour Yoga Teacher Training India",
+    "Hatha Yoga Dharamsala",
+    "Daily Yoga Classes Dharamsala"
+  ]
+}

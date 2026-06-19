@@ -1,0 +1,8 @@
+{
+  "name": "Taru Yoga School",
+  "short_name": "Taru Yoga",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#fbf7ef",
+  "theme_color": "#8a9b7b"
+}
